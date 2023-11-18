@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+   <left>
+      <VBox fx:id="leftPanel" alignment="TOP_CENTER" prefHeight="400.0" prefWidth="227.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="RIGHT" text="Farm Items Controller">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TreeView fx:id="treeView1" onContextMenuRequested="#selectTreeViewItem" onMouseClicked="#selectTreeViewItem" prefWidth="214.0" />
+            <ListView fx:id="myListView" onMouseClicked="#onListViewItemClick" prefWidth="212.0" />
+            <Label text="Drone Image Actions" />
+            <Button mnemonicParsing="false" onAction="#onGoToItemBtnClick" prefHeight="26.0" prefWidth="137.0" text="GoTo Item/Container" />
+            <Button fx:id="scanFarm" mnemonicParsing="false" onAction="#onScanFarmBtnClick" prefWidth="100.0" text="Scan Farm" />
+            <Button mnemonicParsing="false" onAction="#onGoHomeBtnClick" text="Go Home" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="visualizationArea" prefHeight="600.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

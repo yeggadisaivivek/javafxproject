@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.3302675585284281" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.6098484848484849" layoutX="2.0" layoutY="1.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="195.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="40.0" layoutY="6.0" text="Farm Items Controller" />
+                              <TreeView layoutX="-1.0" layoutY="30.0" prefHeight="100.0" prefWidth="200.0" />
+                              <ListView layoutX="-5.0" layoutY="125.0" prefHeight="121.0" prefWidth="200.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Label layoutX="19.0" layoutY="6.0" text="Drone Image Actions" />
+                              <Button layoutX="4.0" layoutY="27.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="109.0" text="Visit Item/Container">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="116.0" layoutY="30.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="68.0" text="Go Home">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="7.0" layoutY="56.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="173.0" text="Scan Farm">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                              <Separator layoutX="-14.0" layoutY="87.0" prefWidth="200.0" />
+                              <Label layoutX="29.0" layoutY="88.0" text="Tello Drone Actions" />
+                              <Button layoutX="10.0" layoutY="115.0" mnemonicParsing="false" text="Scan Farm">
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="90.0" layoutY="112.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Visit Item/Container">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+package hellofx
+
+import javafx.scene.control.Label
+import javafx.scene.layout.StackPane
+
+component hellofx controlledby hellofx.Controller{StackPane{maxHeight:-Infinity,maxWidth:-Infinity,minHeight:-Infinity,minWidth:-Infinity,prefHeight:400.0,prefWidth:600.0,children:[Label id label{text:"Label"}]}}
