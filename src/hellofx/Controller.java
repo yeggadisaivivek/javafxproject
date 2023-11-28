@@ -91,7 +91,9 @@ public class Controller implements Initializable {
     
     private CompositeItems item;
     
+    
     String currentFood;
+    
     
     private CompositeItems getInitialSetup() {
     	ItemContainer rootItemContainer = new ItemContainer("Root",0,0,0,0,ContainerTags.ROOT);
@@ -444,7 +446,7 @@ public class Controller implements Initializable {
     private int currentPathIndex;
     private void playNextPathTransition() {
         if (currentPathIndex < paths.size()) {
-            PathTransition pathTransition = new PathTransition(Duration.seconds(1), paths.get(currentPathIndex), drone);
+            PathTransition pathTransition = new PathTransition(Duration.seconds(2), paths.get(currentPathIndex), drone);
             pathTransition.setOnFinished(event -> {
                 currentPathIndex++;
                 playNextPathTransition();
